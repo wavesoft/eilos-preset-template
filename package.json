@@ -1,0 +1,47 @@
+{
+  "name": "eilos-preset-template",
+  "version": "1.0.0",
+  "description": "Base template for creating eilos presets",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=development webpack",
+    "prepack": "NODE_ENV=production webpack"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "tags": [
+    "eilos",
+    "eilos-preset",
+    "typescript",
+    "webpack",
+    "jest"
+  ],
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.ts",
+    "bin/*",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavesoft/eilos-preset-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wavesoft/eilos-preset-template/issues"
+  },
+  "homepage": "https://github.com/wavesoft/eilos-preset-template#readme",
+  "devDependencies": {
+    "ajv": "^8.6.2",
+    "eilos": "^1.0.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
